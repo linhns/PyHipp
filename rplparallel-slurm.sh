@@ -13,19 +13,9 @@
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
-<<<<<<< HEAD
 import DataProcessingTools as DPT; \
 import os; \
 import time; \
-=======
-<<<<<<< HEAD:myrse-slurm.sh
-=======
-import DataProcessingTools as DPT; \
-import os; \
->>>>>>> upstream/main:rplparallel-slurm.sh
-import time; \
-import os; \
->>>>>>> upstream/main
 t0 = time.time(); \
 print(time.localtime()); \
 DPT.objects.processDirs(dirs=None, objtype=pyh.RPLParallel, saveLevel=1); \
@@ -37,13 +27,4 @@ pyh.raycast(1); \
 print(time.localtime()); \
 print(time.time()-t0);"
 
-<<<<<<< HEAD
-#aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:828927850221:awsnotify --message "RPLParallelJobDone"
-=======
-<<<<<<< HEAD:myrse-slurm.sh
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:828927850221:awsnotify --message "RSEJobDone"
-=======
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:018084650241:awsnotify --message "RPLParallelJobDone"
-
->>>>>>> upstream/main:rplparallel-slurm.sh
->>>>>>> upstream/main
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:828927850221:awsnotify --message "RPLParallelJobDone"
